@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Resume</title>
+    <style>
+        :root {
+            --primary: #2d3436;
+            --accent: #0984e3;
+            --light: #f5f6fa;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; color: var(--primary); background: var(--light); }
+        nav { background: white; padding: 1rem; position: fixed; width: 100%; top: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1); z-index: 100; text-align: center; }
+        nav a { margin: 0 15px; text-decoration: none; color: var(--primary); font-weight: bold; }
+        header { padding: 100px 20px 50px; text-align: center; background: white; }
+        section { padding: 60px 20px; max-width: 900px; margin: auto; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .badge { background: var(--accent); color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; display: inline-block; margin: 5px; }
+        footer { text-align: center; padding: 20px; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+</nav>
+
+<header>
+    <h1>Your Name</h1>
+    <p>Data Analyst & Web Developer</p>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>I am a detail-oriented professional with a focus on data storytelling and web development. I enjoy transforming complex datasets into actionable insights and building functional, user-centric web applications. Currently, I am exploring the intersection of data visualization and cybersecurity.</p>
+</section>
+
+<section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="card">
+        <h3>Programming & Frameworks</h3>
+        <span class="badge">Python</span>
+        <span class="badge">Flask</span>
+        <span class="badge">SQLAlchemy</span>
+        <span class="badge">HTML/CSS</span>
+        <h3>Data & Visualization</h3>
+        <span class="badge">Power BI</span>
+        <span class="badge">Data Analysis</span>
+        <span class="badge">Singstat/Data.gov.sg</span>
+        <h3>Cybersecurity</h3>
+        <span class="badge">Insider Threat Analysis</span>
+        <span class="badge">Security Modeling</span>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Featured Projects</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Singapore Cost of Living Dashboard</h3>
+            <p>An interactive Power BI project analyzing household expenditure and property price trends across Singapore using government datasets.</p>
+        </div>
+        <div class="card">
+            <h3>Full-Stack Web Application</h3>
+            <p>A web platform built using Flask and SQLAlchemy, featuring a robust backend and CRUD functionality for data management.</p>
+        </div>
+        <div class="card">
+            <h3>Insider Threat Security Modeling</h3>
+            <p>Created detailed flow diagrams and analysis focused on identifying and mitigating insider threats within corporate infrastructures.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Your Name | Built with GitHub Pages</p>
+</footer>
+
+</body>
+</html>
