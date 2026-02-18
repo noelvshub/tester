@@ -3,29 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Portfolio | Dark Mode</title>
+    <title>Nonis Noel Albert | Portfolio</title>
     <style>
         :root {
-            --bg-deep: #0f172a;        /* Deep background */
-            --bg-card: #1e293b;        /* Card background */
-            --text-main: #f8fafc;      /* Primary text */
-            --text-muted: #94a3b8;    /* Subtext */
-            --accent: #38bdf8;         /* High-contrast blue */
+            --bg-deep: #0f172a;
+            --bg-card: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
             --border: #334155;
         }
 
         body { 
             font-family: 'Inter', -apple-system, sans-serif; 
-            line-height: 1.6; 
+            line-height: 1.7; 
             margin: 0; 
             color: var(--text-main); 
             background: var(--bg-deep); 
         }
 
         nav { 
-            background: rgba(15, 23, 42, 0.8); 
-            backdrop-filter: blur(10px);
-            padding: 1rem; 
+            background: rgba(15, 23, 42, 0.85); 
+            backdrop-filter: blur(12px);
+            padding: 1.2rem; 
             position: fixed; 
             width: 100%; 
             top: 0; 
@@ -39,42 +39,51 @@
             text-decoration: none; 
             color: var(--text-main); 
             font-weight: 500; 
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
             transition: color 0.3s;
         }
 
         nav a:hover { color: var(--accent); }
 
         header { 
-            padding: 140px 20px 60px; 
+            padding: 160px 20px 80px; 
             text-align: center; 
-            background: linear-gradient(180deg, var(--bg-deep) 0%, #1e293b 100%); 
+            background: radial-gradient(circle at center, #1e293b 0%, var(--bg-deep) 100%); 
         }
 
-        header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
-        header p { color: var(--accent); font-weight: 600; letter-spacing: 1px; }
+        header h1 { font-size: 3rem; margin-bottom: 0.5rem; letter-spacing: -1px; }
+        header p { color: var(--accent); font-weight: 600; font-size: 1.1rem; }
 
-        section { padding: 80px 20px; max-width: 1000px; margin: auto; }
+        section { padding: 80px 20px; max-width: 900px; margin: auto; }
 
-        h2 { border-left: 4px solid var(--accent); padding-left: 15px; margin-bottom: 30px; }
+        h2 { border-left: 4px solid var(--accent); padding-left: 15px; margin-bottom: 30px; font-size: 1.8rem; }
+
+        .about-text { font-size: 1.1rem; color: var(--text-muted); }
+        .about-text b { color: var(--text-main); }
 
         .grid { 
             display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
             gap: 25px; 
         }
 
         .card { 
             background: var(--bg-card); 
-            padding: 25px; 
+            padding: 30px; 
             border-radius: 12px; 
             border: 1px solid var(--border);
-            transition: transform 0.3s, border-color 0.3s;
+            transition: all 0.3s ease;
         }
 
         .card:hover { 
-            transform: translateY(-5px); 
+            transform: translateY(-8px); 
             border-color: var(--accent);
+            box-shadow: 0 10px 30px -10px rgba(56, 189, 248, 0.2);
         }
+
+        .card h3 { margin-top: 0; color: var(--accent); }
 
         .badge { 
             background: rgba(56, 189, 248, 0.1); 
@@ -83,13 +92,13 @@
             border-radius: 6px; 
             font-size: 0.85rem; 
             display: inline-block; 
-            margin: 5px; 
+            margin: 5px 5px 5px 0; 
             border: 1px solid rgba(56, 189, 248, 0.2);
         }
 
         footer { 
             text-align: center; 
-            padding: 40px; 
+            padding: 60px; 
             color: var(--text-muted);
             border-top: 1px solid var(--border);
             font-size: 0.9rem; 
@@ -106,50 +115,63 @@
 
 <header>
     <h1>Nonis Noel Albert</h1>
-    <p>SOFTWARE DEVELOPER / ANALYST</p>
+    <p>Software Developer & Data Analyst</p>
 </header>
 
 <section id="about">
     <h2>About Me</h2>
-    <p>I am a technology enthusiast focused on building efficient, scalable solutions and extracting meaningful insights from data. I enjoy the process of turning complex problems into intuitive user experiences.</p>
+    <div class="about-text">
+        <p>I am a versatile <b>Software Developer and Data Analyst</b> with a passion for building functional, data-driven applications. My expertise lies in bridging the gap between raw information and user-centric software, whether that's through crafting robust web backends or uncovering trends in complex datasets.</p>
+        
+        <p>I have a strong background in working with <b>Singaporean public datasets</b> (Singstat, Data.gov.sg) to analyze socio-economic trends, such as property prices and household expenditure. Beyond analysis, I build full-stack web solutions using <b>Python and Flask</b>, focusing on scalability and seamless CRUD functionality.</p>
+        
+        <p>Additionally, I have a keen interest in <b>Cybersecurity</b>, specifically in modeling and mitigating insider threats. My approach combines technical rigor with analytical research—ranging from security flow diagrams to studying the behavioral impacts of technology on well-being.</p>
+    </div>
 </section>
 
 <section id="skills">
     <h2>Technical Arsenal</h2>
     <div class="card">
-        <h3>Development</h3>
+        <h3>Programming & Frameworks</h3>
         <span class="badge">Python</span>
         <span class="badge">Flask</span>
-        <span class="badge">HTML/CSS</span>
         <span class="badge">SQLAlchemy</span>
+        <span class="badge">HTML5 / CSS3</span>
+        <span class="badge">JavaScript</span>
         
-        <h3>Analysis & Tools</h3>
+        <h3>Data Science & Visualization</h3>
         <span class="badge">Power BI</span>
-        <span class="badge">Git/GitHub</span>
-        <span class="badge">Data Visualization</span>
+        <span class="badge">Excel Analytics</span>
+        <span class="badge">Singstat Table Builder</span>
+        <span class="badge">Data.gov.sg API</span>
+        
+        <h3>Security & Tools</h3>
+        <span class="badge">Insider Threat Modeling</span>
+        <span class="badge">Git / GitHub</span>
+        <span class="badge">Technical Writing</span>
     </div>
 </section>
 
 <section id="projects">
-    <h2>Projects</h2>
+    <h2>Key Projects</h2>
     <div class="grid">
         <div class="card">
-            <h3>Project One</h3>
-            <p>Description of a key project highlighting the technologies used and the specific problem it solved.</p>
+            <h3>Singapore Cost of Living Dashboard</h3>
+            <p>A comprehensive Power BI project that visualizes property price fluctuations and household spending habits using official Singaporean datasets.</p>
         </div>
         <div class="card">
-            <h3>Project Two</h3>
-            <p>Showcase another achievement here, focusing on the impact and outcomes of your work.</p>
+            <h3>Full-Stack Web Platform</h3>
+            <p>Developed a responsive web application using Flask and SQLAlchemy, featuring a secure backend and dynamic database management.</p>
         </div>
         <div class="card">
-            <h3>Project Three</h3>
-            <p>Briefly explain a technical challenge you overcame or a unique tool you developed.</p>
+            <h3>Insider Threat Security Analysis</h3>
+            <p>Designed detailed flow diagrams and threat models focused on identifying vulnerabilities and securing corporate data against internal risks.</p>
         </div>
     </div>
 </section>
 
 <footer>
-    <p>&copy; 2026 Nonis Noel Albert | Built on GitHub Pages</p>
+    <p>&copy; 2026 Nonis Noel Albert | Professional Portfolio</p>
 </footer>
 
 </body>
